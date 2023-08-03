@@ -4,11 +4,13 @@
   box-sizing: border-box;
 }
 
-h2{
+/*-----css en index------*/
+
+h2 {
   background-color: rgb(23, 87, 23);
-  color:white;
+  color: white;
   text-align: center;
-  margin:15px 0px 15px 0px;
+  margin: 15px 0px 15px 0px;
   padding: 5px;
 }
 
@@ -36,28 +38,34 @@ header {
 }
 
 h1 {
-  color: rgb(243, 241, 241);
+  color: white;
   text-transform: uppercase;
   font-weight: 500px;
   font-size: 30px;
   margin: 0;
 }
 
-.productos1{
+.encabezado{
+  color: white;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.productos1 {
   display: flex;
   flex-direction: row;
   justify-content: start;
-  padding-bottom:10px ;
+  padding-bottom: 10px;
 }
 
-.productos2{
+.productos2 {
   display: flex;
   flex-direction: row;
   justify-content: end;
   padding-top: 10px;
 }
 
-.card{
+.card {
   margin: 10px;
 }
 
@@ -203,4 +211,73 @@ select {
 .boton-eliminar:focus {
   outline: none;
 }
+
+
+/*-------css en foooter-------*/
+
+.fixed{
+  position: fixed;
+  right: 45px ;
+  bottom: 100px;
+}
+
+.pie-de-pagina {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(23, 87, 23);
+  /* background: linear-gradient(180deg, rgba(144, 15, 15, 1) 30%, rgba(0, 0, 0, 1) 84%); */
+  flex-wrap: wrap;
+  transition: 2s;
+}
+
+ul {
+  margin: 5px;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.copy {
+  color: white;
+  font-size: 18px;
+  margin: 15px;
+  text-align: center;
+}
+
+div {
+  margin: 5px;
+}
+.bi-instagram {
+  &:hover {
+        transform: scale(1.2);
+      }
+
+      margin: 5px;
+      color: white;
+    }
+
+    .bi-facebook {
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      margin: 5px;
+      color: white;
+    }
+
+    .bi-twitter {
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      margin: 5px;
+      color: white;
+    }
 

@@ -15,7 +15,7 @@ const productos =
         nombre: "Discos 20KG",
         tipo: "Disco",
         desc: "Par de disco ROUGE de alta calidad",
-        precio:  + 211.75 ,
+        precio: 211.75 ,
         imagen: '../public/images/disco20.png',
         cantidad:1
     },
