@@ -5,6 +5,12 @@ const productoContenedor = document.getElementById("producto-contenedor");
 productoContenedor.addEventListener('click', (e) => {
   if (e.target.classList.contains('agregar')) {
     validarProductoEnCarrito(e.target.id);
+    Swal.fire({
+      icon:'success',
+      title:'Agregado con exito!',
+      showConfirmeButton: false,
+      timer:1000
+    })
   }
 })
 
@@ -53,14 +59,13 @@ const pintarCarrito = (carrito) => {
     <p>${producto.nombre}</p>
     <p>€ ${producto.precio}</p>
     <p id=cantidad${producto.id}>Cantidad: ${producto.cantidad}</p>
-    <button class="btn waves-effect waves-ligth boton-eliminar" value="${producto.id}">X</button>
+    <button id="btnEliminar" class="btn waves-effect waves-ligth boton-eliminar" value="${producto.id}">X</button>
   `
   contenedor.appendChild(div)
   });
 }
 
-
-const eliminarProductoCarrito = (id) =>{
+const eliminarProductoCarrito = (id)  =>{
   const productoIndex =  carrito.findIndex(producto => producto.id == id)
   carrito.splice(productoIndex, 1)
   pintarCarrito(carrito)
@@ -98,3 +103,5 @@ const cargarCarrito = () =>{
   pintarCarrito(carrito)
   actualizarTotalesCarrito(carrito)
 }
+
+

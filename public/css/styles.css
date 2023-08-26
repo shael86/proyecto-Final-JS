@@ -6,15 +6,6 @@
 
 /*-----css en index------*/
 
-h2 {
-  background-color: rgb(23, 87, 23);
-  color: white;
-  text-align: center;
-  margin: 15px 0px 15px 0px;
-  padding: 5px;
-}
-
-
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -25,48 +16,77 @@ img {
   border-radius: 10px !important;
 }
 
+.img-border{
+  border: solid 2px black;
+}
+
+.img-logo{
+  height: 150px;
+  width: 165px;
+  margin: 7px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
-  padding: 20px 10%;
-  background-color: rgb(23, 87, 23);
-  /* box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px; */
+  margin-bottom:x;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: rgb(29,28,33);
+background: linear-gradient(51deg, rgba(29,28,33,1) 36%, rgba(62,199,6,1) 100%);
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-  /* margin-bottom: 20px; */
 }
 
 h1 {
   color: white;
   text-transform: uppercase;
-  font-weight: 500px;
+  text-align: center;
+  font-weight: 200px;
   font-size: 30px;
-  margin: 0;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-top: 5px;
+  background: rgb(29,28,33);
+background: linear-gradient(51deg, rgba(29,28,33,1) 36%, rgba(62,199,6,1) 100%);
 }
 
-.encabezado{
+h2 {
+  background: rgb(29,28,33);
+background: linear-gradient(51deg, rgba(29,28,33,1) 36%, rgba(62,199,6,1) 100%);
   color: white;
-  font-size: 25px;
-  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 5px 0px 15px 0px;
+  padding: 5px;
+  margin-top: 0;
+  font-size: 30px;
 }
 
 .productos1 {
+  background-color: rgb(40, 209, 40);
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: center;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .productos2 {
+  background-color: rgb(40, 209, 40);
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: center;
   padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.card {
-  margin: 10px;
+.img-producto{
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #cesta-carrito {
@@ -104,10 +124,13 @@ p {
 }
 
 .card {
+  margin: 10px;
   max-width: 30%;
   padding: 10px;
-  border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border-radius: 15px !important;
+  -webkit-box-shadow: -14px 22px 28px -4px rgba(9,110,24,1);
+  -moz-box-shadow: -14px 22px 28px -4px rgba(9,110,24,1);
+  box-shadow: -14px 22px 28px -4px rgba(9,110,24,1);
 }
 
 select {
@@ -226,22 +249,16 @@ select {
   justify-content: space-between;
   align-items: center;
   background: rgb(23, 87, 23);
-  /* background: linear-gradient(180deg, rgba(144, 15, 15, 1) 30%, rgba(0, 0, 0, 1) 84%); */
+  background: linear-gradient(51deg, rgba(29,28,33,1) 36%, rgba(62,199,6,1) 100%);
   flex-wrap: wrap;
   transition: 2s;
-}
-
-ul {
-  margin: 5px;
-  padding: 5px;
-  font-family: 'Roboto', sans-serif;
-  color: white;
 }
 
 a {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   color: white;
+  margin-left: 10px;
 }
 
 .copy {
@@ -251,7 +268,7 @@ a {
   text-align: center;
 }
 
-div {
+.div-redes {
   margin: 5px;
 }
 .bi-instagram {
