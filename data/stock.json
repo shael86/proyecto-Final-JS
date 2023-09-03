@@ -1,13 +1,12 @@
-const productos = [
-
+[
     {
-        id: 1,
-        nombre: "Discos 25KG",
-        tipo: "Disco",
-        desc: "Par de disco ROUGE de alta calidad",
-        precio:  260.15,
-        imagen: "./public/images/discos/disco25.jpg",
-        cantidad: 1
+        "id": 1,
+        "nombre": "Discos 25KG",
+        "tipo": "Disco",
+        "desc": "Par de disco ROUGE de alta calidad",
+        "precio":  260.15 ,
+        "imagen": "./public/images/discos/disco25.jpg",
+        "cantidad": 1
     },
 
     {
@@ -179,4 +178,4 @@ const productos = [
         "imagen": "./public/images/accesorios/kettlebell.webp",
         "cantidad":1
     }
-]
+    ]
